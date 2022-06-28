@@ -154,6 +154,7 @@ a {
   font-weight: 400;
   color: var(--white);
   margin-left: 15px;
+  overflow-x: scroll;
 }
 .error {
   color: var(--white);

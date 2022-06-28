@@ -44,6 +44,8 @@ function getUser(username) {
         locationName.style.color = "var(--gray)";
         locationName.innerHTML = "Not Available";
       } else {
+        locationIcon.style.color = "var(--white)";
+        locationName.style.color = "var(--white)";
         locationName.innerHTML = result.location;
       }
       if (result.blog === "") {
@@ -51,6 +53,8 @@ function getUser(username) {
         blogName.style.color = "var(--gray)";
         blogName.innerHTML = "Not Available";
       } else {
+        blogIcon.style.color = "var(--white)";
+        blogName.style.color = "var(--white)";
         blogName.innerHTML = result.blog;
       }
       if (result.twitter_username === null) {
@@ -58,6 +62,8 @@ function getUser(username) {
         twitterName.style.color = "var(--gray)";
         twitterName.innerHTML = "Not Available";
       } else {
+        twitterIcon.style.color = "var(--white)";
+        twitterName.style.color = "var(--white)";
         twitterName.innerHTML = result.blog;
       }
       if (result.company === null) {
@@ -65,6 +71,8 @@ function getUser(username) {
         companyName.style.color = "var(--gray)";
         companyName.innerHTML = "Not Available";
       } else {
+        companyIcon.style.color = "var(--white)";
+        companyName.style.color = "var(--white)";
         companyName.innerHTML = result.blog;
       }
     }
