@@ -39,7 +39,7 @@ function getUser(username) {
       followers.innerHTML = result.followers;
       repos.innerHTML = result.public_repos;
       following.innerHTML = result.following;
-      if (result.location === "") {
+      if (result.location === null) {
         locationIcon.style.color = "var(--gray)";
         locationName.style.color = "var(--gray)";
         locationName.innerHTML = "Not Available";
