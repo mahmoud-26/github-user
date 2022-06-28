@@ -18,6 +18,11 @@ let twitterName = document.querySelector(".twitter-name");
 let companyIcon = document.querySelector(".company-icon");
 let companyName = document.querySelector(".company-name");
 
+window.onload = () => {
+  getUser("mahmoud-26");
+  searchInput.value = "mahmoud-26";
+}
+
 function getUser(username) {
   fetch(`https://api.github.com/users/${username}`)
   .then(res => res.json())
